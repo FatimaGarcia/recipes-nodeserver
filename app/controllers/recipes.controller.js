@@ -3,7 +3,7 @@ var Recipes = require('../models/recipe.js');
 mongoose.model('Recipes');
 
 function RecipesController() {    
-    let getAllRecipes = function(req, res) {
+    let getRecipes = function(req, res) {
         var query = {}
         if(req.query.type != undefined) {
             query = {type: JSON.parse(req.query.type)}
@@ -50,7 +50,7 @@ function RecipesController() {
     }
 
     return {
-        getAllRecipes,
+        getRecipes,
         findRecipesByIngredients,
         findRecipesById,
         addRecipe
