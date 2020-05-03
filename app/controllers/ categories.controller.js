@@ -6,7 +6,7 @@ function CategoriesController() {
     let getCategories = function(req, res) {
         Category.find(function(err, categories) {
             if(err) res.send(500, err.message);
-            console.log('GET /categories')
+            console.log('GET /categories');
                 res.status(200).jsonp(categories);
             });
     }

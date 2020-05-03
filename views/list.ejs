@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h4 class="text-center">Listado de recetas</h4>
+        </div>
+    </div>
+    <div class="row">
+        <% for (let x = 0; x < recipes.length; x++) { %>
+            <div class="col">
+                <h4><%= recipes[x]["name"] %></h4>
+            </div>
+        <% } %>
+    </div>
+</div>

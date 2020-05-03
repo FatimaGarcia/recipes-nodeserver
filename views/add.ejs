@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h4 class="text-center">Añadir receta</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <form>
+                <div class="form-group">
+                    <label for="inputName">Nombre</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Nombre">
+                </div>
+                <div class="form-group">
+                    <label for="inputIngredients">Ingredientes</label>
+                    <div class="row">
+                        <div class="col-10">
+                            <input type="text" class="form-control" name="ingredients[]" placeholder="Ingredientes"/>
+                        </div>
+                        <div class="col-2">
+                            <button type="button" class="btn btn-block btn-outline-dark" id="moreIngredients"><i
+                                    class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputProcedure">Procedimiento</label>
+                    <div class="row">
+                        <div class="col-10">
+                            <input type="text" class="form-control" name="procedure[]" placeholder="Procedimiento"/>
+                        </div>
+                        <div class="col-2">
+                            <button type="button" class="btn btn-block btn-outline-dark" id="moreSteps"><i
+                                    class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="selectType">Tipo</label>
+                    <select multiple class="form-control" id="selectType">
+                        <option>Postre</option>
+                        <option>Snack</option>
+                        <option>Carne</option>
+                        <option>Pescado</option>
+                        <option>Verduras</option>
+                        <option>Pasta</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Añadir</button>
+            </form>
+        </div>
+    </div>
+</div>

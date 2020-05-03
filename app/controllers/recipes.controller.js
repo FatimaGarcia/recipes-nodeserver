@@ -12,7 +12,7 @@ function RecipesController() {
             if(err) res.send(500, err.message);
             console.log('GET /recipes')
                 res.status(200).jsonp(recipes);
-            });
+        });
     }
 
     let findRecipesByIngredients = function(req, res){
